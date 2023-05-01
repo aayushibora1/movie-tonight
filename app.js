@@ -16,7 +16,7 @@ const showMovies = (data) => {
     moiveBox.innerHTML = "";
     data.results.forEach(
         (result) => {
-            const imagePath = result.poster_path === null ? "image-missing.png" : IMGPATH + result.poster_path;
+            const imagePath = result.poster_path === null ? "img.png" : IMGPATH + result.poster_path;
             
             const box = document.createElement("div")
             box.classList.add("box")
